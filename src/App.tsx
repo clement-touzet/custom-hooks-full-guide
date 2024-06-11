@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import Hotel from "./Hotel";
+import { useHotels } from "./hooks/useHotels";
 
 export type HotelType = {
   id: number;
@@ -11,21 +11,7 @@ export type HotelType = {
 };
 
 function App() {
-  const [hotels, setHotels] = useState<HotelType[]>([]);
-  const [error, setLoadingError] = useState(false);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchHotels = async () => {
-      const data = await fetch("./db.json")
-        .then((data) => data.json())
-        .then((db) => db.hotels)
-        .catch(() => setLoadingError(true));
-      setHotels(data);
-      setLoading(false);
-    };
-    fetchHotels();
-  }, []);
+  const { hotels, error, loading } = useHotels();
 
   return (
     <div>

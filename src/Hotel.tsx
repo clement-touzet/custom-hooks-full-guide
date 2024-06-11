@@ -6,7 +6,7 @@ type Props = {
 
 const Hotel = ({ hotel }: Props) => {
   return (
-    <div style={{}}>
+    <div>
       <h1>{hotel.title}</h1>
       <p>{hotel.price}€</p>
       <p>{hotel.stars} étoiles</p>
