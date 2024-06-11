@@ -1,0 +1,28 @@
+{
+  "hotels": [
+    {
+      "id": 1,
+      "title": "Hotel bord de plage",
+      "price": 99,
+      "img": "",
+      "stars": 3,
+      "usersGlobalMark": 4.8
+    },
+    {
+      "id": 2,
+      "title": "Hotel en montagne",
+      "price": 429,
+      "img": "",
+      "stars": 4,
+      "usersGlobalMark": 4.9
+    },
+    {
+      "id": 3,
+      "title": "Hotel de la cote",
+      "price": 77,
+      "img": "",
+      "stars": 2,
+      "usersGlobalMark": 3.7
+    }
+  ]
+}
